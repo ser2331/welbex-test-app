@@ -1,0 +1,44 @@
+.Pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagination-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page-link {
+    width: 34px;
+    height: 34px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid #3e5e5e;
+    background: #2b4040;
+    color: wheat;
+    padding: 8px;
+}
+
+.active {
+    border: 1px solid #43992e;
+}
+
+.page-link:disabled,
+button[disabled]{
+    border: 1px solid #3e5e5e;
+    background-color: #3e5e5e;
+    color: #666666;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first {
+    width: 46px;
+}

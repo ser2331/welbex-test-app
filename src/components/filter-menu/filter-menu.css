@@ -1,0 +1,26 @@
+.FilterMenu {
+    display: flex;
+    margin-bottom: 24px;
+    height: 34px;
+}
+
+.cols, .params, .input, .submit-btn {
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid #3e5e5e;
+    background: #2b4040;
+    color: wheat;
+    padding: 8px;
+}
+
+.cols, .params {
+    width: 125px;
+}
+
+.cols, .params, .submit-btn {
+    cursor: pointer
+}
+
+.input {
+    width: 250px;
+}
