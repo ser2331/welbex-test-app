@@ -10,7 +10,7 @@ import './app.css';
 const { colsTypesMap, paramsTypesMap } = Types;
 
 const App = () => {
-    const baseApi = 'https://welbex-test-app.herokuapp.com/';
+    const baseApi = 'https://welbex-test-app.herokuapp.com/api';
 
     const [data, setData] = useState([]);
 
