@@ -1,16 +1,17 @@
 .Table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 422px;
     width: 764px;
     margin-bottom: 24px;
     border: 1px solid #2b4040;
     border-radius: 20px;
+    padding: 2px;
 }
 
 .table-content {
     width: 100%;
-    /*border: none;*/
-    margin-bottom: 20px;
-    border-radius: 15px;
 }
 
 .table-content tr th:first-child, .table tr td:first-child {
@@ -80,4 +81,27 @@ td {
     width: 20px;
     height: 14px;
     opacity: 0.5;
+}
+
+.empty-data {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 764px) {
+    .Table {
+        max-width: 330px;
+        height: 340px;
+    }
+
+    th, td {
+        padding: 2px;
+    }
+
+    .vector {
+        width: 12px;
+        height: 8px;
+    }
 }

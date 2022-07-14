@@ -127,12 +127,15 @@ const App = () => {
                 data={visibleData}
             />
 
-            <Pagination
-                totalCount={formatData.length}
-                currentPage={currentPage}
-                setCurrentPage={setCurrentPage}
-                pageSize={pageSize}
-            />
+            {formatData.length ? (
+                <Pagination
+                    totalCount={formatData.length}
+                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
+                    pageSize={pageSize}
+                />
+            ) : (<div className="plug" />)
+            }
         </div>
     );
 };

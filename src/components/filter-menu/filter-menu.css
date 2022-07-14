@@ -24,3 +24,15 @@
 .input {
     width: 250px;
 }
+
+@media screen and (max-width: 764px) {
+    .FilterMenu {
+        width: 310px;
+        height: auto;
+        padding: 0 24px;
+    }
+
+    .input {
+        width: 236px;
+    }
+}

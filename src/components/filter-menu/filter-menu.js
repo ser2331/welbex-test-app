@@ -33,6 +33,7 @@ const FilterMenu = ({ onReset, handleChangeCol,
                     type={getInputType()}
                     value={text}
                     onChange={handleChangeText}
+                    placeholder="Введите текст"
                 />
             </form>
             <button className="submit-btn" onClick={onReset}>
