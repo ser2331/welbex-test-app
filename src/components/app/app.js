@@ -86,10 +86,14 @@ const App = () => {
     };
 
     const sorting = (arr, type) => {
-        if (type) {
+        if (type && (type === colsTypesMap.get('name').type)) {
             if (isReverse) {
-                return arr.sort((a, b) => a[type].toLowerCase().localeCompare(b[type].toLowerCase())).reverse();
-            } else return arr.sort((a, b) => a[type].toLowerCase().localeCompare(b[type].toLowerCase()));
+                return arr?.sort((a, b) => a[type].toLowerCase().localeCompare(b[type].toLowerCase())).reverse();
+            } else return arr?.sort((a, b) => a[type].toLowerCase().localeCompare(b[type].toLowerCase()));
+        } else if(type) {
+            if (isReverse) {
+                return arr?.sort((a, b) => a[type] - b[type]).reverse();
+            } else return arr?.sort((a, b) => a[type] - b[type]);
         } else return arr;
     };
 
